@@ -1,6 +1,6 @@
 class CountryFacade
-  def country(country)
-    service.country(country)
+  def country(name)
+    service.country(name)
   end
 
   def service

@@ -1,5 +1,5 @@
 class Api::V1::CountriesController < ApplicationController
   def show
-    country = CountryFacade.new.country(country)
+    country = CountryFacade.new.country(name)
   end
 end
