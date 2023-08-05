@@ -1,6 +1,7 @@
 class Api::V1::RecipesController < ApplicationController
   def index
-    recipes = RecipeFacade.new.recipes(params[:country])
+    country = CountryFacade.new.country(params[:country])
+    recipes = RecipeFacade.new.recipes(country[0].demonym)
     options = {}
     options[:is_collection]
     render json: RecipeSerializer.new(recipes, options)
