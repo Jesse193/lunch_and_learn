@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?api_key=28de2ca9478e80010f2815e4e48af51c&app_id=0eeaf613&cuisineType=North%20America&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sat, 05 Aug 2023 14:25:55 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-1-171.ec2.internal/10.0.1.171
+      Vary:
+      - accept-encoding
+      Strict-Transport-Security:
+      - max-age=15552001
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"error","message":"Unauthorized app_id = 0eeaf613"}'
+  recorded_at: Sat, 05 Aug 2023 14:25:55 GMT
+recorded_with: VCR 6.2.0
