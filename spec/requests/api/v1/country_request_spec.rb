@@ -13,6 +13,9 @@ RSpec.describe "Country API request" do
         expect(country[:name]).to eq("United States of America")
         expect(country[:capital]).to eq(["Washington, D.C."])
         expect(country[:demonym]).to eq("American")
+        expect(country).to_not have_key(:birds)
+        expect(country).to_not have_key(:bugs)
+        expect(country.keys.count).to eq(3)
       end
     end
   end
