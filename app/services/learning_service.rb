@@ -1,6 +1,6 @@
 class LearningService
   def conn
-    Faraday.new(url: "https://youtube.googleapis.com/youtube/v3/search?")
+    Faraday.new(url: "https://youtube.googleapis.com/youtube/v3/search")
   end
 
   def get_url(url)
@@ -9,7 +9,6 @@ class LearningService
   end
 
   def videos(country)
-    get_url("part=snippet&channelId=UCluQ5yInbeAkkeCndNnUhpw&key=#{Figaro.env.key}&q=#{country}")
+    get_url("?&channelId=UCluQ5yInbeAkkeCndNnUhpw&key=#{Figaro.env.key}&q=#{country}&type=video&part=snippet")
   end
 end
-
