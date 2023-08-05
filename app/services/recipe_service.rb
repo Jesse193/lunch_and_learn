@@ -9,6 +9,6 @@ class RecipeService
   end
 
   def recipes(country)
-    get_url("?#{country}")
+    get_url("?type=public&app_id=#{Figaro.env.app_id}&api_key=#{Figaro.env.app_key}&cuisineType=#{country}")
   end
 end
