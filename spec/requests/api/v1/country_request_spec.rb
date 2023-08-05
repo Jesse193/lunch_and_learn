@@ -12,6 +12,7 @@ RSpec.describe "Country API request" do
       country.each do |country|
         expect(country[:name]).to eq("United States of America")
         expect(country[:capital]).to eq(["Washington, D.C."])
+        expect(country[:subregion]).to eq("North America")
       end
     end
   end
