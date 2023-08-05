@@ -1,6 +1,6 @@
-class CountryService
+class RecipeService
   def conn
-    Faraday.new(url: "https://restcountries.com/v3.1/")
+    Faraday.new(url: "https://api.edamam.com/api/recipes/v2")
   end
 
   def get_url(url)
@@ -8,7 +8,7 @@ class CountryService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def country(name)
-    get_url("name/#{name}")
+  def recipes(country)
+    get_url("?#{country}")
   end
 end
