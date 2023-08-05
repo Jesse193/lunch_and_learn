@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.edamam.com/api/recipes/v2?api_key=28de2ca9478e80010f2815e4e48af51c&app_id=0eeaf613&cuisineType=United%20States%20of%20America&type=public
+    uri: https://api.edamam.com/api/recipes/v2?app_id=0eeaf613&app_key=28de2ca9478e80010f2815e4e48af51c&cuisineType=United%20States%20of%20America&type=public
     body:
       encoding: US-ASCII
       string: ''
@@ -15,17 +15,17 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 401
+      code: 200
       message: ''
     headers:
       Server:
       - openresty
       Date:
-      - Sat, 05 Aug 2023 14:18:51 GMT
+      - Sat, 05 Aug 2023 14:54:46 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Transfer-Encoding:
-      - chunked
+      - application/json
+      Content-Length:
+      - '49'
       Connection:
       - keep-alive
       Cache-Control:
@@ -34,12 +34,14 @@ http_interactions:
       - Thu, 01 Jan 1970 00:00:00 GMT
       X-Served-By:
       - ip-10-0-1-210.ec2.internal/10.0.1.210
-      Vary:
-      - accept-encoding
+      Content-Language:
+      - en
       Strict-Transport-Security:
       - max-age=15552001
+      X-Request-Id:
+      - af9cf56e2b764da82376cecf0c490750
     body:
-      encoding: ASCII-8BIT
-      string: '{"status":"error","message":"Unauthorized app_id = 0eeaf613"}'
-  recorded_at: Sat, 05 Aug 2023 14:18:51 GMT
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Sat, 05 Aug 2023 14:54:46 GMT
 recorded_with: VCR 6.2.0
