@@ -10,6 +10,8 @@ describe RecipeService do
         expect(recipes[:hits][0][:recipe]).to have_key :url
         expect(recipes[:hits][0][:recipe]).to have_key :cuisineType
         expect(recipes[:hits][0][:recipe]).to have_key :image
+        expect(recipes[:hits][0][:recipe]).to_not have_key :ice_cream
+        expect(recipes[:hits][0][:recipe]).to_not have_key :ingredients
       end
     end
   end
