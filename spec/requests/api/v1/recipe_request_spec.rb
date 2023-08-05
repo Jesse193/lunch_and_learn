@@ -13,6 +13,11 @@ RSpec.describe "Recipe API request" do
       expect(recipes[:data][0][:attributes][:country]).to eq(["american"])
       expect(recipes[:data][0][:attributes][:image]).to be_a(String)
       expect(recipes[:data][0][:attributes][:url]).to be_a(String)
+      expect(recipes[:data][0].keys.count).to eq(3)
+      expect(recipes[:data][0][:attributes].keys.count).to eq(4)
+      expect(recipes[:data][0][:attributes]).to_not have_key(:ice_cream)
+      expect(recipes[:data][0]).to_not have_key(:ingredients)
+      expect(recipes[:data][0]).to_not have_key(:cheese)
     end
   end
 end
