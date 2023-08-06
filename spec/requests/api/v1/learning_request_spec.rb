@@ -11,6 +11,7 @@ RSpec.describe "Learning video API request" do
       expect(videos[0]).to have_key(:youtube_video_id)
       expect(videos[0][:title]).to eq("A Super Quick History of Canada")
       expect(videos[0][:youtube_video_id]).to eq("e_okM7Mig6s")
+      expect(videos[0]).to_not have_key(:likes)
     end
   end
 end
