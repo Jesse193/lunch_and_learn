@@ -1,0 +1,262 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://restcountries.com/v3.1/name/Canada
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 06 Aug 2023 02:05:05 GMT
+      Server:
+      - Apache/2.4.38 (Debian)
+      Cache-Control:
+      - public, immutable, max-age=31556926
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2953'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6eyJjb21tb24iOiJDYW5hZGEiLCJvZmZpY2lhbCI6IkNhbmFkYSIsIm5hdGl2ZU5hbWUiOnsiZW5nIjp7Im9mZmljaWFsIjoiQ2FuYWRhIiwiY29tbW9uIjoiQ2FuYWRhIn0sImZyYSI6eyJvZmZpY2lhbCI6IkNhbmFkYSIsImNvbW1vbiI6IkNhbmFkYSJ9fX0sInRsZCI6WyIuY2EiXSwiY2NhMiI6IkNBIiwiY2NuMyI6IjEyNCIsImNjYTMiOiJDQU4iLCJjaW9jIjoiQ0FOIiwiaW5kZXBlbmRlbnQiOnRydWUsInN0YXR1cyI6Im9mZmljaWFsbHktYXNzaWduZWQiLCJ1bk1lbWJlciI6dHJ1ZSwiY3VycmVuY2llcyI6eyJDQUQiOnsibmFtZSI6IkNhbmFkaWFuIGRvbGxhciIsInN5bWJvbCI6IiQifX0sImlkZCI6eyJyb290IjoiKzEiLCJzdWZmaXhlcyI6WyIiXX0sImNhcGl0YWwiOlsiT3R0YXdhIl0sImFsdFNwZWxsaW5ncyI6WyJDQSJdLCJyZWdpb24iOiJBbWVyaWNhcyIsInN1YnJlZ2lvbiI6Ik5vcnRoIEFtZXJpY2EiLCJsYW5ndWFnZXMiOnsiZW5nIjoiRW5nbGlzaCIsImZyYSI6IkZyZW5jaCJ9LCJ0cmFuc2xhdGlvbnMiOnsiYXJhIjp7Im9mZmljaWFsIjoi2YPZhtiv2KciLCJjb21tb24iOiLZg9mG2K/YpyJ9LCJicmUiOnsib2ZmaWNpYWwiOiJLYW5hZGEiLCJjb21tb24iOiJLYW5hZGEifSwiY2VzIjp7Im9mZmljaWFsIjoiS2FuYWRhIiwiY29tbW9uIjoiS2FuYWRhIn0sImN5bSI6eyJvZmZpY2lhbCI6IkNhbmFkYSIsImNvbW1vbiI6IkNhbmFkYSJ9LCJkZXUiOnsib2ZmaWNpYWwiOiJLYW5hZGEiLCJjb21tb24iOiJLYW5hZGEifSwiZXN0Ijp7Im9mZmljaWFsIjoiS2FuYWRhIiwiY29tbW9uIjoiS2FuYWRhIn0sImZpbiI6eyJvZmZpY2lhbCI6IkthbmFkYSIsImNvbW1vbiI6IkthbmFkYSJ9LCJmcmEiOnsib2ZmaWNpYWwiOiJDYW5hZGEiLCJjb21tb24iOiJDYW5hZGEifSwiaHJ2Ijp7Im9mZmljaWFsIjoiS2FuYWRhIiwiY29tbW9uIjoiS2FuYWRhIn0sImh1biI6eyJvZmZpY2lhbCI6IkthbmFkYSIsImNvbW1vbiI6IkthbmFkYSJ9LCJpdGEiOnsib2ZmaWNpYWwiOiJDYW5hZGEiLCJjb21tb24iOiJDYW5hZGEifSwianBuIjp7Im9mZmljaWFsIjoi44Kr44OK44OAIiwiY29tbW9uIjoi44Kr44OK44OAIn0sImtvciI6eyJvZmZpY2lhbCI6Iuy6kOuCmOuLpCIsImNvbW1vbiI6Iuy6kOuCmOuLpCJ9LCJubGQiOnsib2ZmaWNpYWwiOiJDYW5hZGEiLCJjb21tb24iOiJDYW5hZGEifSwicGVyIjp7Im9mZmljaWFsIjoi2qnYp9mG2KfYr9inIiwiY29tbW9uIjoi2qnYp9mG2KfYr9inIn0sInBvbCI6eyJvZmZpY2lhbCI6IkthbmFkYSIsImNvbW1vbiI6IkthbmFkYSJ9LCJwb3IiOnsib2ZmaWNpYWwiOiJDYW5hZMOhIiwiY29tbW9uIjoiQ2FuYWTDoSJ9LCJydXMiOnsib2ZmaWNpYWwiOiLQmtCw0L3QsNC00LAiLCJjb21tb24iOiLQmtCw0L3QsNC00LAifSwic2xrIjp7Im9mZmljaWFsIjoiS2FuYWRhIiwiY29tbW9uIjoiS2FuYWRhIn0sInNwYSI6eyJvZmZpY2lhbCI6IkNhbmFkw6EiLCJjb21tb24iOiJDYW5hZMOhIn0sInNycCI6eyJvZmZpY2lhbCI6ItCa0LDQvdCw0LTQsCIsImNvbW1vbiI6ItCa0LDQvdCw0LTQsCJ9LCJzd2UiOnsib2ZmaWNpYWwiOiJLYW5hZGEiLCJjb21tb24iOiJLYW5hZGEifSwidHVyIjp7Im9mZmljaWFsIjoiS2FuYWRhIiwiY29tbW9uIjoiS2FuYWRhIn0sInVyZCI6eyJvZmZpY2lhbCI6Itqp24zZhtuM2ojYpyIsImNvbW1vbiI6Itqp24zZhtuM2ojYpyJ9LCJ6aG8iOnsib2ZmaWNpYWwiOiLliqDmi7/lpKciLCJjb21tb24iOiLliqDmi7/lpKcifX0sImxhdGxuZyI6WzYwLjAsLTk1LjBdLCJsYW5kbG9ja2VkIjpmYWxzZSwiYm9yZGVycyI6WyJVU0EiXSwiYXJlYSI6OTk4NDY3MC4wLCJkZW1vbnltcyI6eyJlbmciOnsiZiI6IkNhbmFkaWFuIiwibSI6IkNhbmFkaWFuIn0sImZyYSI6eyJmIjoiQ2FuYWRpZW5uZSIsIm0iOiJDYW5hZGllbiJ9fSwiZmxhZyI6Ilx1RDgzQ1x1RERFOFx1RDgzQ1x1RERFNiIsIm1hcHMiOnsiZ29vZ2xlTWFwcyI6Imh0dHBzOi8vZ29vLmdsL21hcHMvam1FVkx1Z3JlZXFpWlh4YkEiLCJvcGVuU3RyZWV0TWFwcyI6Imh0dHBzOi8vd3d3Lm9wZW5zdHJlZXRtYXAub3JnL3JlbGF0aW9uLzE0MjgxMjUifSwicG9wdWxhdGlvbiI6MzgwMDUyMzgsImdpbmkiOnsiMjAxNyI6MzMuM30sImZpZmEiOiJDQU4iLCJjYXIiOnsic2lnbnMiOlsiQ0ROIl0sInNpZGUiOiJyaWdodCJ9LCJ0aW1lem9uZXMiOlsiVVRDLTA4OjAwIiwiVVRDLTA3OjAwIiwiVVRDLTA2OjAwIiwiVVRDLTA1OjAwIiwiVVRDLTA0OjAwIiwiVVRDLTAzOjMwIl0sImNvbnRpbmVudHMiOlsiTm9ydGggQW1lcmljYSJdLCJmbGFncyI6eyJwbmciOiJodHRwczovL2ZsYWdjZG4uY29tL3czMjAvY2EucG5nIiwic3ZnIjoiaHR0cHM6Ly9mbGFnY2RuLmNvbS9jYS5zdmciLCJhbHQiOiJUaGUgZmxhZyBvZiBDYW5hZGEgaXMgY29tcG9zZWQgb2YgYSByZWQgdmVydGljYWwgYmFuZCBvbiB0aGUgaG9pc3QgYW5kIGZseSBzaWRlcyBhbmQgYSBjZW50cmFsIHdoaXRlIHNxdWFyZSB0aGF0IGlzIHR3aWNlIHRoZSB3aWR0aCBvZiB0aGUgdmVydGljYWwgYmFuZHMuIEEgbGFyZ2UgZWxldmVuLXBvaW50ZWQgcmVkIG1hcGxlIGxlYWYgaXMgY2VudGVyZWQgaW4gdGhlIHdoaXRlIHNxdWFyZS4ifSwiY29hdE9mQXJtcyI6eyJwbmciOiJodHRwczovL21haW5mYWN0cy5jb20vbWVkaWEvaW1hZ2VzL2NvYXRzX29mX2FybXMvY2EucG5nIiwic3ZnIjoiaHR0cHM6Ly9tYWluZmFjdHMuY29tL21lZGlhL2ltYWdlcy9jb2F0c19vZl9hcm1zL2NhLnN2ZyJ9LCJzdGFydE9mV2VlayI6InN1bmRheSIsImNhcGl0YWxJbmZvIjp7ImxhdGxuZyI6WzQ1LjQyLC03NS43XX0sInBvc3RhbENvZGUiOnsiZm9ybWF0IjoiQCNAICNAIyIsInJlZ2V4IjoiXihbQUJDRUdISktMTU5QUlNUVlhZXVxcZFtBQkNFR0hKS0xNTlBSU1RWV1hZWl0pID8oXFxkW0FCQ0VHSEpLTE1OUFJTVFZXWFlaXVxcZCkkIn19XQ==
+  recorded_at: Sun, 06 Aug 2023 02:05:05 GMT
+- request:
+    method: get
+    uri: https://youtube.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyBfKvjP0NchlmMfJ5eB5_FXyMmaa-5gsxA&part=snippet&q=Canada&type=video
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sun, 06 Aug 2023 02:05:05 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#searchListResponse",
+          "etag": "9dNdmq2Uv-yLPyHoYLsjXp6bf7M",
+          "nextPageToken": "CAUQAA",
+          "regionCode": "US",
+          "pageInfo": {
+            "totalResults": 6730,
+            "resultsPerPage": 5
+          },
+          "items": [
+            {
+              "kind": "youtube#searchResult",
+              "etag": "_8ZnXSThyhTC8L3fo5sR2aGDAzM",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "e_okM7Mig6s"
+              },
+              "snippet": {
+                "publishedAt": "2019-10-13T18:35:32Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Canada",
+                "description": "Pictures Requiring Attribution: Buzzzsherman: https://en.wikipedia.org/wiki/File:Journal.pone.0001596.g004.png Dylan Kereluk ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/e_okM7Mig6s/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/e_okM7Mig6s/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/e_okM7Mig6s/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-10-13T18:35:32Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "4IBESsfahWWzVcXLDi3wKUw5vRY",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "rr9_t2pymcI"
+              },
+              "snippet": {
+                "publishedAt": "2020-02-14T17:00:24Z",
+                "channelId": "UCrr7y8rEXb7_RiVniwvzk9w",
+                "title": "Canada delenda est",
+                "description": "Unist'ot'en website: https://unistoten.camp/ Supporter Toolkit: https://unistoten.camp/supportertoolkit2020/ Support me on Patreon: ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/rr9_t2pymcI/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/rr9_t2pymcI/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/rr9_t2pymcI/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Thought Slime",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-02-14T17:00:24Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "Gb9Xpu5jHxSeKg3rSJbTSNkXSY4",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "hHJzGmJsZkU"
+              },
+              "snippet": {
+                "publishedAt": "2021-12-10T15:00:18Z",
+                "channelId": "UC4514FwdRy5gI6CdC9GPb0w",
+                "title": "CANADIAN TOUR VLOG | AMERICANS TRY CANADIAN FOODS",
+                "description": "SHOP RAW SUPPLEMENTS     USE CODE CBUM https://getrawnutrition.com/cbum Checkout My Training App, New Workouts ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/hHJzGmJsZkU/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/hHJzGmJsZkU/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/hHJzGmJsZkU/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Chris Bumstead",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-12-10T15:00:18Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "gVaWhkCCWkjQaGbbms1o-1luJC0",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "IPvkUAAJm9k"
+              },
+              "snippet": {
+                "publishedAt": "2017-05-25T04:30:00Z",
+                "channelId": "UCcvNYxWXR_5TjVK7cSCdW-g",
+                "title": "Latest Punjabi Songs 2017 | Canada: Prince Singh | New Punjabi Songs 2017 | T-Series Apna Punjab",
+                "description": "Presenting latest punjabi song \"Canada' sung by Prince Singh. The music of new punjabi song is given by Ashwani Kumar while ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/IPvkUAAJm9k/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/IPvkUAAJm9k/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/IPvkUAAJm9k/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "T-Series Apna Punjab",
+                "liveBroadcastContent": "none",
+                "publishTime": "2017-05-25T04:30:00Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "rlC5Xtw73IHp2pRSt6h26qhHtKI",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "tXY_mm4FTcE"
+              },
+              "snippet": {
+                "publishedAt": "2022-04-13T19:07:16Z",
+                "channelId": "UCAYY1RBYM0vkrgckvzKl3Ow",
+                "title": "Unboxing Military Surplus from the Canadian Forces",
+                "description": "I am back again to find out if I'm going to win or lose with another crate of military surplus.",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/tXY_mm4FTcE/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/tXY_mm4FTcE/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/tXY_mm4FTcE/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "OshawaBushcraft",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-04-13T19:07:16Z"
+              }
+            }
+          ]
+        }
+  recorded_at: Sun, 06 Aug 2023 02:05:05 GMT
+recorded_with: VCR 6.2.0
