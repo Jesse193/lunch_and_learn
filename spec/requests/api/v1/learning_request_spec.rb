@@ -21,6 +21,8 @@ RSpec.describe "Learning video API request" do
       expect(learning_material[:data][:attributes][:photos].count).to eq(10)
       expect(learning_material[:data][:attributes][:photos].first).to have_key(:url)
       expect(learning_material[:data][:attributes][:photos].first).to have_key(:alt_tag)
+      expect(learning_material[:data][:attributes][:photos].first).to_not have_key(:likes)
+      expect(learning_material[:data][:attributes][:photos].first).to_not have_key(:city)
     end
   end
 end
