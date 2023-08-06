@@ -9,4 +9,7 @@ class LearningSerializer
     params[:country]
   end
   attribute :video
+  attribute :photos do |learning, params|
+    params[:photos]
+  end
 end
