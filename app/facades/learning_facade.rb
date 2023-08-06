@@ -6,7 +6,7 @@ class LearningFacade
   end
 
   def photos(country)
-    photos_service.photos(country).map do |data|
+    photos_service.photos(country)[:results].map do |data|
       Photo.new(data)
     end
   end
