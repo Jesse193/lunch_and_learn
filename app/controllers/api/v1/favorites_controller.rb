@@ -1,4 +1,12 @@
 class Api::V1::FavoritesController < ApplicationController
+  def index
+    user = User.find_by_api_key(params[:api_key])
+    if user != nil
+      favorites = user.favorites
+      render json: FavoriteSerializer.new(favorites)
+    end
+  end
+
   def create
     user = User.find_by_api_key(params[:api_key])
     if user != nil
