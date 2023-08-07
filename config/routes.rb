@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       resources :countries, only: [:index]
       resources :recipes, only: [:index]
       resources :learning, only: [:index]
+      resources :users, only: [:create]
     end
   end
 end
