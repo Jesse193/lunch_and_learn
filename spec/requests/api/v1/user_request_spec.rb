@@ -30,6 +30,10 @@ RSpec.describe "User registration request" do
       user = JSON.parse(response.body, symbolize_names: true)
       query_params = {country: "USA", recipe_link: "http://www.seriouseats.com/recipes/2016/08/iced-matcha-green-tea-recipe.html", recipe_title: "Frothy Iced Matcha Green Tea Recipe", api_key: user[:data][:attributes][:api_key]}
       post api_v1_favorites_path, params: query_params
+      message = JSON.parse(response.body, symbolize_names: true)
+      expect(message).to eq({
+        "Success": "Favorite added successfully"
+      })
     end
   end
 end
