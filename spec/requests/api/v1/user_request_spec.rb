@@ -59,5 +59,14 @@ RSpec.describe "User registration request" do
       expect(favorites[:data][0][:attributes]).to_not have_key(:puppies)
       expect(favorites[:data][0]).to_not have_key(:kittens)
     end
+
+    it "returns empty array if no favorites" do
+      post "/api/v1/users", params: {name: "User2", email: "User2@email.com", password: "1234", password_confirmation: "1234"}
+      user = JSON.parse(response.body, symbolize_names: true)
+      query_params = {api_key: user[:data][:attributes][:api_key]}
+      get api_v1_favorites_path, params: query_params
+      favorites = JSON.parse(response.body, symbolize_names: true)
+      expect(favorites).to eq({:data=>[]})
+    end
   end
 end
