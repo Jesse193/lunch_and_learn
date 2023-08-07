@@ -4,6 +4,6 @@ class AirQuality
     @aqi = attributes[:overall_aqi]
     @pm25_concentration = attributes[:"PM2.5"][:concentration]
     @co_concentration = attributes[:CO][:concentration]
-    @id = nil
+    @id = "null"
   end
 end

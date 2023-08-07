@@ -7,7 +7,7 @@ RSpec.describe CountryFacade, type: :model do
       country = CountryFacade.new.country(name)
       expect(country).to be_a(Object)
       expect(country.name).to eq("United States of America")
-      expect(country.capital).to eq(["Washington, D.C."])
+      expect(country.capital).to eq("Washington, D.C.")
       expect(country.demonym).to eq("American")
     end
   end

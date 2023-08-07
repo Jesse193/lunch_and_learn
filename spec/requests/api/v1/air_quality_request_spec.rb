@@ -18,6 +18,21 @@ RSpec.describe "Air quality request" do
       expect(air_quality[:data][:attributes][:aqi]).to be_a(Integer)
       expect(air_quality[:data][:attributes][:pm25_concentration]).to be_a(Float)
       expect(air_quality[:data][:attributes][:co_concentration]).to be_a(Float)
+
+      expect(air_quality).to eq(
+        {
+          "data": {
+            "id": "null",
+            "type:": "air_quality",
+            "attributes":
+            { "aqi": 66,
+              "city": "Paris",
+              "pm25_concentration": 2.74,
+              "co_concentration": 220.3
+            }
+          }
+        }
+      )
     end
   end
 end

@@ -23,13 +23,13 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '278'
+      - '277'
       Connection:
       - keep-alive
       Date:
-      - Mon, 07 Aug 2023 15:13:25 GMT
+      - Mon, 07 Aug 2023 16:50:22 GMT
       X-Amzn-Requestid:
-      - c1539d18-7b9f-4734-a64f-f36baa47bcad
+      - ccc3d2ae-5cb3-41d5-b4da-205215eb2063
       Access-Control-Allow-Origin:
       - "*"
       Allow:
@@ -37,24 +37,24 @@ http_interactions:
       Access-Control-Allow-Headers:
       - "*"
       X-Amz-Apigw-Id:
-      - JS6DVEabvHcFbXw=
+      - JTIQPEZmPHcFnAA=
       Access-Control-Allow-Methods:
       - GET, OPTIONS, POST
       X-Amzn-Trace-Id:
-      - Root=1-64d10a15-2e52ee15257c90f267238b6a;Sampled=0;lineage=d5ca6d75:0
+      - Root=1-64d120ce-1062bbad7c05528a00e84a89;Sampled=0;lineage=d5ca6d75:0
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 f1dd5bd4f4b31b158b9e826b6e013cda.cloudfront.net (CloudFront)
+      - 1.1 170caffbbbc9abe2c5fd15f4f58b75b4.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - IAD55-P4
       X-Amz-Cf-Id:
-      - OlMflJsGFgxkSdByzAojuSzDdFicOGsrrKMIZh5pB3jHTGq22Ay7Hw==
+      - nI8F0iHwjmyg8us5Q5ZOex8JvhGhLYUH6-u1ug8bCPnS1h3Or0tgfw==
     body:
       encoding: UTF-8
-      string: '{"CO": {"concentration": 216.96, "aqi": 2}, "NO2": {"concentration":
-        2.66, "aqi": 3}, "O3": {"concentration": 75.82, "aqi": 102}, "SO2": {"concentration":
-        2.44, "aqi": 3}, "PM2.5": {"concentration": 2.95, "aqi": 9}, "PM10": {"concentration":
-        3.82, "aqi": 3}, "overall_aqi": 102}'
-  recorded_at: Mon, 07 Aug 2023 15:13:25 GMT
+      string: '{"CO": {"concentration": 226.97, "aqi": 2}, "NO2": {"concentration":
+        5.44, "aqi": 6}, "O3": {"concentration": 64.37, "aqi": 66}, "SO2": {"concentration":
+        2.65, "aqi": 3}, "PM2.5": {"concentration": 3.13, "aqi": 10}, "PM10": {"concentration":
+        4.26, "aqi": 3}, "overall_aqi": 66}'
+  recorded_at: Mon, 07 Aug 2023 16:50:22 GMT
 recorded_with: VCR 6.2.0
