@@ -37,7 +37,7 @@
   - API ninja/ air quality
     - requires an api ninja account for api key
     - https://api-ninjas.com/api/airquality
-    - store your API key as `air_quality:` [API_KEY] inside your application.yml file
+    - store your API key as `air_quality: [API_KEY]` inside your application.yml file
   - Rest countries (retrieve country info)
     - does not require an api key
     - Documentation can be found here: https://restcountries.com/
@@ -45,12 +45,12 @@
     - requires an API key
     - Get started here: https://developers.google.com/youtube/v3/getting-started
     - search list api documentation can be found here https://developers.google.com/youtube/v3/docs/search/list
-    - store your API key as `key:` [API_KEY] inside your application.yml file
+    - store your API key as `key: [API_KEY]` inside your application.yml file
   - Unsplash (photos)
     - requires an unsplash account and API key
     - You can register for an account here: https://unsplash.com/developers
-    - store your unsplash API key as `unsplash_access:` [API_KEY] inside your application.yml file
+    - store your unsplash API key as `unsplash_access: [API_KEY]` inside your application.yml file
   - Edamam API (recipes)
     - requires an account for API keys (application_id and application_key)
     - You can register for a API key here: https://developer.edamam.com/edamam-recipe-api
-    - store application_id as `app_id:` [APP_ID] and application_key as `app_key:` [APP_KEY] inside your application.yml file
+    - store application_id as `app_id: [APP_ID]` and application_key as `app_key: [APP_KEY]` inside your application.yml file
