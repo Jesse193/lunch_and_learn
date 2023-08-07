@@ -5,7 +5,7 @@
 - Rails Version: 7.0.6
 
 - Run `bundle install`
-- Run `rails db:{drop,create,migrate,seed}
+- Run `rails db:{drop,create,migrate,seed}`
 
 <h3>Gems</h3>
 
