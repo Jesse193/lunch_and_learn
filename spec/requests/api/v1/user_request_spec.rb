@@ -13,5 +13,14 @@ RSpec.describe "User registration request" do
       expect(json[:data][:attributes][:email]).to eq("User@email.com")
       expect(json[:data][:attributes]).to_not have_key(:dogs)
     end
+
+    it "returns error if user registration fails" do
+      expect{post "/api/v1/users", params: {name: "User", email: "User@email.com", password: "1234", password_confirmation: "1"}}.to raise_error("Validation failed: Password confirmation doesn't match Password")
+    end
+
+    it "only requires unique email" do
+      post "/api/v1/users", params: {name: "User", email: "User@email.com", password: "1234", password_confirmation: "1234"}
+      expect{post "/api/v1/users", params: {name: "User", email: "User@email.com", password: "1234", password_confirmation: "1234"}}.to raise_error("Validation failed: Email has already been taken")
+    end
   end
 end
