@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :recipes, only: [:index]
       resources :learning, only: [:index]
       resources :users, only: [:create]
+      resources :air_quality, only: [:index]
     end
   end
 end
