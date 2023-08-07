@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :learning, only: [:index]
       resources :users, only: [:create]
       resources :air_quality, only: [:index]
+      resources :favorites, only: [:create], to: "users/favorites#create"
     end
   end
 end

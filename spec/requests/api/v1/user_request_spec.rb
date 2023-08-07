@@ -23,4 +23,13 @@ RSpec.describe "User registration request" do
       expect{post "/api/v1/users", params: {name: "User", email: "User@email.com", password: "1234", password_confirmation: "1234"}}.to raise_error("Validation failed: Email has already been taken")
     end
   end
+
+  describe "User favorites" do
+    it "can add favorite" do
+      post "/api/v1/users", params: {name: "User2", email: "User2@email.com", password: "1234", password_confirmation: "1234"}
+      user = JSON.parse(response.body, symbolize_names: true)
+      query_params = {country: "USA", recipe_link: "http://www.seriouseats.com/recipes/2016/08/iced-matcha-green-tea-recipe.html", recipe_title: "Frothy Iced Matcha Green Tea Recipe", api_key: user[:data][:attributes][:api_key]}
+      post api_v1_favorites_path, params: query_params
+    end
+  end
 end
