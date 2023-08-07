@@ -32,7 +32,9 @@
     - https://github.com/laserlemon/figaro
   - jsonapi-serializer   
     - https://github.com/jsonapi-serializer/jsonapi-serializer
-
+  - webmock
+    - https://github.com/bblimke/webmock 
+ 
   <h3>APIs</h3>
 - Running this locally requires you to have API keys
 - Make sure to add `/config/application.yml` to your .gitignore
