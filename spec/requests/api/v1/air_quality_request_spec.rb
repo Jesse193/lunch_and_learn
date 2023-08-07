@@ -23,12 +23,12 @@ RSpec.describe "Air quality request" do
         {
           "data": {
             "id": "null",
-            "type:": "air_quality",
+            "type": "air_quality",
             "attributes":
             { "aqi": 66,
               "city": "Paris",
-              "pm25_concentration": 2.74,
-              "co_concentration": 220.3
+              "pm25_concentration": 3.13,
+              "co_concentration": 226.97
             }
           }
         }
