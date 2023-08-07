@@ -1,7 +1,9 @@
 <h1>Lunch and learn</h1>
 
 <h3>Getting started</h3>
+
 - Ruby Version: 3.2.2
+
 - Rails Version: 7.0.6
 
 - Run `bundle install`
