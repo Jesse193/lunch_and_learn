@@ -1,8 +1,6 @@
 class LearningFacade
-  def videos(country)
-    service.videos(country)[:items].map do |data|
-      Learn.new(data)
-    end
+  def video(country)
+    Learn.new(service.video(country)[:items][0])
   end
 
   def photos(country)
