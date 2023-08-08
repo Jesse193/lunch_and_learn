@@ -1,0 +1,123 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://restcountries.com/v3.1/name/s23dfgbw4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 08 Aug 2023 19:06:03 GMT
+      Server:
+      - Apache/2.4.38 (Debian)
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '36'
+    body:
+      encoding: UTF-8
+      string: '{"status":404,"message":"Not Found"}'
+  recorded_at: Tue, 08 Aug 2023 19:06:02 GMT
+- request:
+    method: get
+    uri: https://restcountries.com/v3.1/name/ssh34b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 08 Aug 2023 19:18:30 GMT
+      Server:
+      - Apache/2.4.38 (Debian)
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '36'
+    body:
+      encoding: UTF-8
+      string: '{"status":404,"message":"Not Found"}'
+  recorded_at: Tue, 08 Aug 2023 19:18:30 GMT
+- request:
+    method: get
+    uri: https://restcountries.com/v3.1/name/s23dfgbw4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 08 Aug 2023 19:22:25 GMT
+      Server:
+      - Apache/2.4.38 (Debian)
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '36'
+    body:
+      encoding: UTF-8
+      string: '{"status":404,"message":"Not Found"}'
+  recorded_at: Tue, 08 Aug 2023 19:22:24 GMT
+- request:
+    method: get
+    uri: https://restcountries.com/v3.1/name/s23dfgbw4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 08 Aug 2023 19:38:50 GMT
+      Server:
+      - Apache/2.4.38 (Debian)
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '36'
+    body:
+      encoding: UTF-8
+      string: '{"status":404,"message":"Not Found"}'
+  recorded_at: Tue, 08 Aug 2023 19:38:50 GMT
+recorded_with: VCR 6.2.0
