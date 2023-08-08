@@ -5,8 +5,6 @@ class Api::V1::UsersController < ApplicationController
       new_user.api_key = SecureRandom.hex(15)
       render json: UserSerializer.new(new_user)
       new_user.save
-    else
-      raise "Password confirmation doesn't match password"
     end
   end
   private

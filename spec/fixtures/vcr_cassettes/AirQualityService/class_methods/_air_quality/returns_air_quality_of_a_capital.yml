@@ -27,9 +27,9 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 08 Aug 2023 01:57:49 GMT
+      - Tue, 08 Aug 2023 03:15:30 GMT
       X-Amzn-Requestid:
-      - 6b99d41b-a760-4713-a0ec-769b2824b3c9
+      - 1a9110ad-d0a3-4093-819e-d2c3a8d7818a
       Access-Control-Allow-Origin:
       - "*"
       Allow:
@@ -37,24 +37,24 @@ http_interactions:
       Access-Control-Allow-Headers:
       - "*"
       X-Amz-Apigw-Id:
-      - JUYcfGZKvHcFnPQ=
+      - JUj03GI4vHcFa6g=
       Access-Control-Allow-Methods:
       - GET, OPTIONS, POST
       X-Amzn-Trace-Id:
-      - Root=1-64d1a11c-730b2c3025668b505e0949a3;Sampled=0;lineage=d5ca6d75:0
+      - Root=1-64d1b352-29dad6f55700363e034672b9;Sampled=0;lineage=d5ca6d75:0
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 e20259e84d7d881ed453b1f0e4f9a4c6.cloudfront.net (CloudFront)
+      - 1.1 4eed67f4be7da2537d3407735b8962a8.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - IAD55-P4
       X-Amz-Cf-Id:
-      - J43fEVR5IeqOo7VrjMxtaF5oZoFgoYdhLW1WUG90_2PhUty-ThxPHg==
+      - A9BYDRhcrhQUv-v5_GaN2Q7GCmBXwtjyoNjx0qsQKkfhlPFA_3jPxQ==
     body:
       encoding: UTF-8
-      string: '{"CO": {"concentration": 260.35, "aqi": 2}, "NO2": {"concentration":
-        11.31, "aqi": 14}, "O3": {"concentration": 16.63, "aqi": 14}, "SO2": {"concentration":
-        1.39, "aqi": 2}, "PM2.5": {"concentration": 8.03, "aqi": 26}, "PM10": {"concentration":
-        11.73, "aqi": 10}, "overall_aqi": 26}'
-  recorded_at: Tue, 08 Aug 2023 01:57:49 GMT
+      string: '{"CO": {"concentration": 257.02, "aqi": 2}, "NO2": {"concentration":
+        10.63, "aqi": 13}, "O3": {"concentration": 18.24, "aqi": 15}, "SO2": {"concentration":
+        1.46, "aqi": 2}, "PM2.5": {"concentration": 8.44, "aqi": 27}, "PM10": {"concentration":
+        12.57, "aqi": 11}, "overall_aqi": 27}'
+  recorded_at: Tue, 08 Aug 2023 03:15:30 GMT
 recorded_with: VCR 6.2.0
