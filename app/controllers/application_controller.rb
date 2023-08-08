@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-  before_action :country, :only => [:index], controller: "countries", "learning", "recipes", "air_quality"
+  before_action :country, :only => [:index]
   def country
     if params[:country] != ""
       country = CountryFacade.new.country(params[:country])
