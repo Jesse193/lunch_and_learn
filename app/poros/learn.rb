@@ -3,7 +3,7 @@ class Learn
   def initialize(attributes)
     @title = attributes[:snippet][:title]
     @youtube_video_id = attributes[:id][:videoId]
-    @id = nil
+    @id = "null"
     @video = {title: @title, youtube_video_id: @youtube_video_id}
   end
 end

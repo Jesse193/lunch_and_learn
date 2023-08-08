@@ -8,7 +8,7 @@ class LearningService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def videos(country)
+  def video(country)
     get_url("?&channelId=UCluQ5yInbeAkkeCndNnUhpw&key=#{Figaro.env.key}&q=#{country}&type=video&part=snippet")
   end
 end
