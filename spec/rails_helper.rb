@@ -77,4 +77,5 @@ VCR.configure do |config|
   config.filter_sensitive_data("Hide_API") {ENV["air_quality"]}
   config.filter_sensitive_data("Hide_API") {ENV["key"]}
   config.configure_rspec_metadata!
+  config.default_cassette_options = { :record => :new_episodes, :erb => true }
 end

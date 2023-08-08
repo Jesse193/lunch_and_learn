@@ -1,4 +1,5 @@
 class Api::V1::FavoritesController < ApplicationController
+  skip_before_action :country
   def index
     user = User.find_by_api_key(params[:api_key])
     if user != nil

@@ -15,5 +15,16 @@ RSpec.describe "Country API request" do
       expect(country).to_not have_key(:bugs)
       expect(country.keys.count).to eq(3)
     end
+
+    it "can get random country", :vcr do
+      query_params = {country: ""}
+      get api_v1_countries_path, params: query_params
+      expect(response).to be_successful
+      country = JSON.parse(response.body, symbolize_names: true)
+      expect(country).to be_a(Object)
+      expect(country).to have_key(:name)
+      expect(country).to have_key(:capital)
+      expect(country).to have_key(:demonym)
+    end
   end
 end
