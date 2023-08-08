@@ -19,6 +19,7 @@ RSpec.describe Learn, type: :model do
       expect(learn.youtube_video_id).to be_a(String)
       expect(learn.video).to eq({title: "History", youtube_video_id: "1234"})
       expect(learn.video).to be_a(Hash)
+      expect(learn.id).to eq("null")
     end
   end
 end

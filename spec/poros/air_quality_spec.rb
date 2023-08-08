@@ -18,6 +18,7 @@ RSpec.describe AirQuality, type: :model do
       expect(air_quality.aqi).to eq(10)
       expect(air_quality.pm25_concentration).to eq(10.2)
       expect(air_quality.co_concentration).to eq(5.2)
+      expect(air_quality.id).to eq("null")
     end
   end
 end
