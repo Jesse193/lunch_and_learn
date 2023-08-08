@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       X-Api-Key:
-      - fNXkUAldwkorA2p84aHOSg==2Lbwegkl5XC3wehE
+      - Hide_API
       User-Agent:
       - Faraday v2.7.10
       Accept-Encoding:
@@ -23,13 +23,13 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '277'
+      - '281'
       Connection:
       - keep-alive
       Date:
-      - Mon, 07 Aug 2023 16:50:22 GMT
+      - Tue, 08 Aug 2023 01:57:49 GMT
       X-Amzn-Requestid:
-      - ccc3d2ae-5cb3-41d5-b4da-205215eb2063
+      - 6b99d41b-a760-4713-a0ec-769b2824b3c9
       Access-Control-Allow-Origin:
       - "*"
       Allow:
@@ -37,24 +37,24 @@ http_interactions:
       Access-Control-Allow-Headers:
       - "*"
       X-Amz-Apigw-Id:
-      - JTIQPEZmPHcFnAA=
+      - JUYcfGZKvHcFnPQ=
       Access-Control-Allow-Methods:
       - GET, OPTIONS, POST
       X-Amzn-Trace-Id:
-      - Root=1-64d120ce-1062bbad7c05528a00e84a89;Sampled=0;lineage=d5ca6d75:0
+      - Root=1-64d1a11c-730b2c3025668b505e0949a3;Sampled=0;lineage=d5ca6d75:0
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 170caffbbbc9abe2c5fd15f4f58b75b4.cloudfront.net (CloudFront)
+      - 1.1 e20259e84d7d881ed453b1f0e4f9a4c6.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - IAD55-P4
       X-Amz-Cf-Id:
-      - nI8F0iHwjmyg8us5Q5ZOex8JvhGhLYUH6-u1ug8bCPnS1h3Or0tgfw==
+      - J43fEVR5IeqOo7VrjMxtaF5oZoFgoYdhLW1WUG90_2PhUty-ThxPHg==
     body:
       encoding: UTF-8
-      string: '{"CO": {"concentration": 226.97, "aqi": 2}, "NO2": {"concentration":
-        5.44, "aqi": 6}, "O3": {"concentration": 64.37, "aqi": 66}, "SO2": {"concentration":
-        2.65, "aqi": 3}, "PM2.5": {"concentration": 3.13, "aqi": 10}, "PM10": {"concentration":
-        4.26, "aqi": 3}, "overall_aqi": 66}'
-  recorded_at: Mon, 07 Aug 2023 16:50:22 GMT
+      string: '{"CO": {"concentration": 260.35, "aqi": 2}, "NO2": {"concentration":
+        11.31, "aqi": 14}, "O3": {"concentration": 16.63, "aqi": 14}, "SO2": {"concentration":
+        1.39, "aqi": 2}, "PM2.5": {"concentration": 8.03, "aqi": 26}, "PM10": {"concentration":
+        11.73, "aqi": 10}, "overall_aqi": 26}'
+  recorded_at: Tue, 08 Aug 2023 01:57:49 GMT
 recorded_with: VCR 6.2.0

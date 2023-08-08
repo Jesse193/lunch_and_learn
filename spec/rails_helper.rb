@@ -70,6 +70,12 @@ end
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
+  config.filter_sensitive_data("Hide_API") {ENV["app_key"]}
+  config.filter_sensitive_data("Hide_API") {ENV["app_id"]}
+  config.filter_sensitive_data("Hide_API") {ENV["unsplash_access"]}
+  config.filter_sensitive_data("Hide_API") {ENV["unsplash_secret"]}
+  config.filter_sensitive_data("Hide_API") {ENV["air_quality"]}
+  config.filter_sensitive_data("Hide_API") {ENV["key"]}
   config.default_cassette_options = { re_record_interval: 30.days }
   config.configure_rspec_metadata!
 end
