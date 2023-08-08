@@ -19,6 +19,11 @@ RSpec.describe Recipe, type: :model do
       expect(recipe.image).to be_a(String)
       expect(recipe.image).to eq("ARecipePhoto.image")
       expect(recipe.id).to eq("null")
+
+      expect(recipe.title).to_not be_a(Integer)
+      expect(recipe.url).to_not be_a(Integer)
+      expect(recipe.image).to_not be_a(Integer)
+      expect(recipe.id).to_not be_a(Integer)
     end
   end
 end

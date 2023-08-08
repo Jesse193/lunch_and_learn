@@ -15,6 +15,9 @@ RSpec.describe Photo, type: :model do
       expect(photo.alt_tag).to be_a(String)
       expect(photo.url).to eq("APhotoLink")
       expect(photo.url).to be_a(String)
+
+      expect(photo.alt_tag).to_not be_a(Integer)
+      expect(photo.url).to_not be_a(Integer)
     end
   end
 end

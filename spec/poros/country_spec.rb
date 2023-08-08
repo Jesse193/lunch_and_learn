@@ -21,6 +21,10 @@ RSpec.describe Country, type: :model do
       expect(country.name).to eq("USA")
       expect(country.capital).to eq("Washington D.C.")
       expect(country.demonym).to eq("American")
+
+      expect(country.name).to_not be_a(Integer)
+      expect(country.capital).to_not be_a(Integer)
+      expect(country.demonym).to_not be_a(Integer)
     end
   end
 end
