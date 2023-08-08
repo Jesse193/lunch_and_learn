@@ -1,6 +1,6 @@
 class RecipeFacade
-  def recipes(country)
-    service.recipes(country)[:hits].map do |data|
+  def recipes(demonym, country)
+    service.recipes(demonym, country)[:hits].map do |data|
       Recipe.new(data)
     end
   end

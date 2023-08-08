@@ -8,7 +8,7 @@ class RecipeService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def recipes(country)
-    get_url("?type=public&app_id=#{Figaro.env.app_id}&app_key=#{Figaro.env.app_key}&cuisineType=#{country}")
+  def recipes(demonym, country)
+    get_url("?type=public&app_id=#{Figaro.env.app_id}&app_key=#{Figaro.env.app_key}&cuisineType=#{demonym}&q=#{country}")
   end
 end

@@ -4,8 +4,9 @@ describe RecipeService do
   context "class methods" do
     context "#recipes" do
       it "returns recipes", :vcr do
-        country = "American"
-        recipes = RecipeService.new.recipes(country)
+        country = "USA"
+        demonym = "American"
+        recipes = RecipeService.new.recipes(country, demonym)
         expect(recipes[:hits][0][:recipe]).to have_key :label
         expect(recipes[:hits][0][:recipe]).to have_key :url
         expect(recipes[:hits][0][:recipe]).to have_key :cuisineType
