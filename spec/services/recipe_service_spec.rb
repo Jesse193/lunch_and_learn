@@ -6,7 +6,7 @@ describe RecipeService do
       it "returns recipes", :vcr do
         country = "USA"
         demonym = "American"
-        recipes = RecipeService.new.recipes(country, demonym)
+        recipes = RecipeService.new.recipes(demonym, country)
         expect(recipes[:hits][0][:recipe]).to have_key :label
         expect(recipes[:hits][0][:recipe]).to have_key :url
         expect(recipes[:hits][0][:recipe]).to have_key :cuisineType
