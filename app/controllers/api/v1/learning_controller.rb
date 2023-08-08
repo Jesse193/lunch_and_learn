@@ -1,6 +1,6 @@
 class Api::V1::LearningController < ApplicationController
   def index
-    country = CountryFacade.new.country(params[:country])
+    country
     learning = LearningFacade.new.video(country.name)
     photos = LearningFacade.new.photos(country.name)
     options = {}
