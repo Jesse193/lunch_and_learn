@@ -1,11 +1,6 @@
 class CountryFacade
   def country(name)
-    country = service.country(name).first
-    if country != [:status, 404]
-      Country.new(country)
-    else
-      raise "Error: status: 400"
-    end
+    Country.new(service.country(name).first)
   end
 
   def random_country

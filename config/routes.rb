@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :users, only: [:create]
       resources :air_quality, only: [:index]
       resources :favorites, only: [:create, :index]
+      resources :sessions, only: [:create]
     end
   end
 end

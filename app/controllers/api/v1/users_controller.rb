@@ -1,5 +1,4 @@
 class Api::V1::UsersController < ApplicationController
-  skip_before_action :country
 
   def create
     new_user = User.create!(user_params)
