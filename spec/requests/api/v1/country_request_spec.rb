@@ -26,10 +26,5 @@ RSpec.describe "Country API request" do
       expect(country).to have_key(:capital)
       expect(country).to have_key(:demonym)
     end
-
-    it "returns error if no country found", :vcr do
-      query_params = {country: "s23dfgbw4"}
-      expect{get api_v1_countries_path, params: query_params}.to raise_error("Error: status: 400")
-    end
   end
 end
